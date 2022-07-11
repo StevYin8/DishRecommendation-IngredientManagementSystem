@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Paeonia Restaurant</title>
+    </head>
+    <body>
+
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
+
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="index.html" class="nav__logo"><svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"  width="30" height="30"><path d="M771 489.7c0 171.5-89.1 312.7-235.6 310.5-146.4-2.2-235.5-139-235.5-310.5 0-131.4 138.2-243.7 202.9-289 19.6-13.7 45.7-13.7 65.3 0C632.8 246 771 358.3 771 489.7z" fill="#FF9999" ></path><path d="M866.8 540.2c-28 169.2-139.1 293.9-283.2 267.8S374 632.3 402.1 463.1C423 337.2 569.7 250.4 643.4 214.2c25.3-12.4 55.6-7.4 75.5 12.5 58 58 168.8 187.6 147.9 313.5z" fill="#FF5555" ></path><path d="M678 427.9c41.8 166.3-10.1 325-152.7 358.6C382.7 820 263 709.1 221.1 542.8c-29.3-116.7 57.6-246.1 112.2-313 23.6-28.9 63.4-38.9 97.8-24.6 79.7 33.1 217.6 106 246.9 222.7z" fill="#FF5555" ></path><path d="M906.3 655C810 796.9 627.9 858.1 508 774s-87.8-241.8 8.6-383.7c63.9-94 205.3-118.1 293.4-123.7 46.3-2.9 88.7 25.9 103.1 70 27.3 84.1 57.1 224.4-6.8 318.4z" fill="#FF9999" ></path><path d="M538.6 385.4C631.3 529.7 674.4 686.7 550 764s-315.1 20.3-407.8-124C74 533.8 122.6 373.6 153.1 296.3c11-27.8 38.5-45.5 68.4-43.9 83 4.4 249 26.8 317.1 133z" fill="#FF9999" ></path><path d="M445.6 781.7c-9-24.5 25.3-47.7 88.4-48.2s96.6 21.4 96.6 44.5-82 117.8-135.1 137.4C442.4 935 419.3 935 393.9 935s-27.7-45 19.6-62.3c47.4-17.4 41.1-66.5 32.1-91z" fill="#2C4432" ></path><path d="M565.9 222.5c-2.2 0-4.4-0.7-6.2-2.2-6-4.7-12.3-10.3-18.3-15.7-7.1-6.3-13.9-12.3-19-15.9-16.1-11.2-37.7-11.2-53.8 0-9.1 6.4-18.1 13.1-26.9 19.8-4.4 3.4-10.7 2.6-14-1.8-3.4-4.4-2.6-10.7 1.8-14 9-6.9 18.3-13.8 27.6-20.4 23-16.1 53.8-16.1 76.8 0 6 4.3 13.2 10.6 20.8 17.3 5.9 5.2 11.9 10.6 17.5 15 4.3 3.4 5.1 9.7 1.6 14-2 2.6-5 3.9-7.9 3.9z" fill="#212121"></path><path d="M715.9 256.4c-2.8 0-5.6-1.2-7.5-3.4-11.9-13.6-24.1-26.8-36.5-39.2-16.8-16.8-42.6-21.1-64-10.6-21 10.3-53 27.3-86.3 49.8a9.99 9.99 0 0 1-13.9-2.7 9.99 9.99 0 0 1 2.7-13.9c34.2-23.1 67.1-40.6 88.7-51.2 29.1-14.3 64.1-8.5 87 14.4 12.7 12.7 25.3 26.2 37.5 40.2 3.6 4.2 3.2 10.5-1 14.1-2 1.7-4.4 2.5-6.7 2.5zM593.4 802.3c-4.7 0-9.4-0.1-14.1-0.4-5.5-0.3-9.7-5-9.4-10.5 0.3-5.5 5-9.8 10.5-9.4 59.9 3.3 124.5-16.5 181.9-56 4.6-3.1 10.8-2 13.9 2.6 3.1 4.6 2 10.8-2.6 13.9-56.6 38.8-120.1 59.8-180.2 59.8z" fill="#212121"></path><path d="M860.4 653.4c-2.1 0-4.2-0.6-5.9-2-4.4-3.3-5.4-9.5-2.1-14 2-2.7 4-5.6 5.7-8.1 27-39.8 39.1-92.5 35.9-156.8-2.3-46-12.8-98.9-30.3-152.8-13-39.8-51.2-65.7-93-63.1-53.1 3.3-130 13.8-194.5 44.8-29.8 14.3-54.5 31.9-73.4 52.1-3.8 4-10.1 4.3-14.1 0.5s-4.3-10.1-0.5-14.1c20.6-22.1 47.3-41.1 79.4-56.5 67.4-32.4 147-43.3 201.9-46.8 50.9-3.2 97.4 28.4 113.2 76.9 18.3 56.4 28.9 109.5 31.3 158 3.4 68.7-9.8 125.6-39.3 169-1.8 2.6-3.9 5.7-6.1 8.7-2.1 2.8-5.1 4.2-8.2 4.2z" fill="#212121"></path><path d="M562.5 299.7c-2.4 0-4.9-0.9-6.8-2.7C503 248.1 435 214.2 387.3 194.4c-14.9-6.2-31-7.4-46.7-3.4-15.7 3.9-29.3 12.6-39.5 25.1-6.3 7.8-13.8 17.2-21.4 27.5-3.3 4.4-9.5 5.4-14 2.1-4.4-3.3-5.4-9.5-2.1-14 7.8-10.7 15.5-20.3 22-28.3 13-15.9 30.3-26.9 50.2-31.9 19.9-5 40.3-3.5 59.2 4.4 49.2 20.4 119.5 55.5 174.4 106.4 4 3.8 4.3 10.1 0.5 14.1-2 2.2-4.7 3.3-7.4 3.3zM382.4 788.6c-111 0-224.5-63.3-288.6-163.3-33.6-52.4-43.9-122.4-30.5-208 0.9-5.5 6-9.2 11.4-8.3 5.5 0.9 9.2 6 8.3 11.4-12.6 80.6-3.4 145.9 27.5 194.1 32.5 50.7 78.5 92.1 133 119.6 52 26.3 109.6 38.1 162.3 33.5 5.5-0.5 10.4 3.6 10.8 9.1 0.5 5.5-3.6 10.4-9.1 10.8-8.2 0.7-16.6 1.1-25.1 1.1z" fill="#212121"></path><path d="M545.1 725.8c-2.5 0-4.9-0.9-6.9-2.7-4-3.8-4.2-10.1-0.4-14.1 34.6-36.5 46.3-86.8 34.8-149.6-10.1-55.1-38.6-120.2-82.5-188.5-28.5-44.4-78.2-78.2-147.7-100.6-59.1-19.1-120.4-25.8-161.4-28-25.6-1.4-49.1 13.7-58.6 37.6-2 5.1-7.8 7.7-13 5.6-5.1-2-7.7-7.8-5.6-13 12.6-31.9 44-52 78.2-50.2 42.2 2.3 105.4 9.2 166.6 28.9C422.7 275 476 311.6 507 360c45.9 71.4 74.6 137.3 85.3 195.7 12.7 69.5-0.7 125.7-40 167-1.9 2.1-4.6 3.1-7.2 3.1zM83.9 376.8c-0.8 0-1.6-0.1-2.4-0.3-5.4-1.3-8.6-6.8-7.3-12.1 0.7-3 0.8-3.3 1.3-4.5 0.1-0.2 0.5-1.3 2.2-6.9 1.6-5.3 7.2-8.2 12.5-6.6 5.3 1.6 8.2 7.2 6.6 12.5-1.8 5.9-2.5 7.7-2.8 8.5-0.1 0.3-0.2 0.9-0.4 1.7-1.1 4.7-5.2 7.7-9.7 7.7z m10-9z" fill="#212121" ></path><path d="M353.9 925c-14.1 0-24.8-9.3-27.3-23.6-3.4-19.1 8.8-45.4 43.5-58.1 17.5-6.4 27.6-18 30.8-35.3 3.4-18.7-2.7-37.6-4.7-42.9-3.7-10.1-2.3-20.7 4.1-29.8 13.5-19.6 48.6-31.5 93.7-31.8 57.9-0.5 83.8 16.6 94.1 26.8 8.2 8.2 12.6 17.7 12.6 27.7 0 21.9-41.9 67.9-50.3 76.8-46.7 50-79.4 65.5-91.3 69.9C404.2 925 379.8 925 353.9 925zM496 723.5h-1.9c-45.5 0.4-70.1 12.7-77.4 23.2-2.7 3.8-3.2 7.5-1.7 11.5 3.1 8.4 9.8 30.4 5.5 53.4-4.4 24.1-19.5 41.6-43.6 50.4-25.5 9.3-32.3 26.5-30.7 35.8 0.8 4.7 3.4 7.1 7.6 7.1 25.1 0 46.7 0 98.1-19 21.9-8.1 53.2-32.3 83.5-64.7 31.7-33.9 45-57.9 45-63.3 0-4.6-2.2-9.1-6.6-13.5-13.2-13.1-42.2-20.9-77.8-20.9z" fill="#212121" ></path><path d="M237 699c-1.8 0-3.5-0.5-5.2-1.4-0.8-0.5-20.8-12.8-41.7-39.8-19.1-24.7-42.8-67.1-47.1-129-4.3-61.6 16.6-120.8 34.9-159.6 19.7-41.8 40.2-69 41.1-70.2 3.3-4.4 9.6-5.3 14-1.9 4.4 3.3 5.3 9.6 1.9 14-0.2 0.3-20.3 27-39.1 67-17.2 36.6-36.8 92.2-32.9 149.2 3.9 56.4 25.2 95 42.4 117.5 18.7 24.4 36.7 35.6 36.9 35.7 4.7 2.9 6.2 9 3.3 13.7-1.9 3.1-5.1 4.8-8.5 4.8z"></path></svg></a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--========== HOME ==========-->
+            <section class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__data">
+                        <h1 class="home__title">Paeonia</h1>
+                        <h2 class="home__subtitle">We cook the Best <br> Chinese Food.</h2>
+                    </div>
+    
+                    <img src="assets/img/chef.png" alt="" class="home__img">
+                </div>
+            </section>
+            
+
+            <!--========== MENU ==========-->
+            <section class="menu section bd-container" id="menu">
+                <span class="section-subtitle">Menu</span>
+                <h2 class="section-title">Main Course</h2>
+
+                <div class="menu__container bd-grid">
+                    <div class="menu__content">
+                        <img src="assets/img/Stir-friedmushroomswithleeks.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Stir-fried mushrooms with leeks</h3>
+                        <span class="menu__detail">mushrooms, leeks</span>
+                        <span class="menu__preci">$12.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/SeafoodRice.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Seafood Rice</h3>
+                        <span class="menu__detail">shrimp, rice</span>
+                        <span class="menu__preci">$15.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="assets/img/StirFriedPorkwithEggplant.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Stir Fried Pork with Eggplant</h3>
+                        <span class="menu__detail">pork, eggplant</span>
+                        <span class="menu__preci">$19.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/sesame-chicken.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Sweet and Sour Chicken</h3>
+                        <span class="menu__detail">chicken</span>
+                        <span class="menu__preci">$19.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/BraisedPorkRibs.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Braised Pork Ribs</h3>
+                        <span class="menu__detail">pork</span>
+                        <span class="menu__preci">$26.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/FriedLargeIntestine.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Fried Large Intestine</h3>
+                        <span class="menu__detail">intestine</span>
+                        <span class="menu__preci">$16.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/BraisedPork.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Braised Pork</h3>
+                        <span class="menu__detail">pork</span>
+                        <span class="menu__preci">$25.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+
+                    <div class="menu__content">
+                        <img src="assets/img/Pan-friedmashedpotatoes.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Pan-fried mashed potatoes</h3>
+                        <span class="menu__detail">potatoes</span>
+                        <span class="menu__preci">$10.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+
+                    <div class="menu__content">
+                        <img src="assets/img/SpicyBBQpork.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Spicy BBQ pork</h3>
+                        <span class="menu__detail">pork</span>
+                        <span class="menu__preci">$18.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/SpicyBeefJerky.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Spicy Beef Jerky</h3>
+                        <span class="menu__detail">beef</span>
+                        <span class="menu__preci">$19.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/Stir-friedmushroomwithpork.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Stir-fried mushroom with pork</h3>
+                        <span class="menu__detail">mushroom, pork</span>
+                        <span class="menu__preci">$16.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/StreakyPork.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Streaky Pork</h3>
+                        <span class="menu__detail">pork</span>
+                        <span class="menu__preci">$18.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/SweetandSourFish.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Sweet and Sour Fish</h3>
+                        <span class="menu__detail">fish</span>
+                        <span class="menu__preci">$20.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/cai/BeefwithBlackPepper.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Beef with Black Pepper</h3>
+                        <span class="menu__detail">beff</span>
+                        <span class="menu__preci">$18.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/cai/BeijingRoastDuck.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Beijing Roast Duck</h3>
+                        <span class="menu__detail">buck</span>
+                        <span class="menu__preci">$25.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/cai/BraisedCarp.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Braised Carp</h3>
+                        <span class="menu__detail">carp</span>
+                        <span class="menu__preci">$21.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+
+                    <div class="menu__content">
+                        <img src="assets/img/cai/BraisedEggplant.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Braised Eggplant</h3>
+                        <span class="menu__detail">eggplant</span>
+                        <span class="menu__preci">$16.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/cai/Deep-friedspringrolls.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Deep-fried spring rolls</h3>
+                        <span class="menu__detail">pork</span>
+                        <span class="menu__preci">$13.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/cai/FishHeadwithMincedPepper.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Fish Head with Minced Pepper</h3>
+                        <span class="menu__detail">fish</span>
+                        <span class="menu__preci">$19.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+ 
+                    <div class="menu__content">
+                        <img src="assets/img/cai/FriedBeef.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Fried Beef</h3>
+                        <span class="menu__detail">beef</span>
+                        <span class="menu__preci">$26.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/cai/MarinatedDuckMeat.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Marinated Duck Meat</h3>
+                        <span class="menu__detail">duck</span>
+                        <span class="menu__preci">$18.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/cai/pngsucai_3267346_858bd7.png" alt="" class="menu__img">
+                        <h3 class="menu__name">beef and pork</h3>
+                        <span class="menu__detail">beef, pork</span>
+                        <span class="menu__preci">$19.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+                    <div class="menu__content">
+                        <img src="assets/img/cai/SpicyDuckNeck.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Spicy Duck Neck</h3>
+                        <span class="menu__detail">duck neck</span>
+                        <span class="menu__preci">$13.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/cai/RoastDuck.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Roast Duck</h3>
+                        <span class="menu__detail">duck</span>
+                        <span class="menu__preci">$19.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/cai/SpicyGarlicChicken.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Spicy Garlic Chicken</h3>
+                        <span class="menu__detail">chicken</span>
+                        <span class="menu__preci">$22.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+                </div>
+
+
+                    <span class="section-subtitle"><svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="30"><path d="M771 489.7c0 171.5-89.1 312.7-235.6 310.5-146.4-2.2-235.5-139-235.5-310.5 0-131.4 138.2-243.7 202.9-289 19.6-13.7 45.7-13.7 65.3 0C632.8 246 771 358.3 771 489.7z" fill="#FF9999" ></path><path d="M866.8 540.2c-28 169.2-139.1 293.9-283.2 267.8S374 632.3 402.1 463.1C423 337.2 569.7 250.4 643.4 214.2c25.3-12.4 55.6-7.4 75.5 12.5 58 58 168.8 187.6 147.9 313.5z" fill="#FF5555" ></path><path d="M678 427.9c41.8 166.3-10.1 325-152.7 358.6C382.7 820 263 709.1 221.1 542.8c-29.3-116.7 57.6-246.1 112.2-313 23.6-28.9 63.4-38.9 97.8-24.6 79.7 33.1 217.6 106 246.9 222.7z" fill="#FF5555" ></path><path d="M906.3 655C810 796.9 627.9 858.1 508 774s-87.8-241.8 8.6-383.7c63.9-94 205.3-118.1 293.4-123.7 46.3-2.9 88.7 25.9 103.1 70 27.3 84.1 57.1 224.4-6.8 318.4z" fill="#FF9999" ></path><path d="M538.6 385.4C631.3 529.7 674.4 686.7 550 764s-315.1 20.3-407.8-124C74 533.8 122.6 373.6 153.1 296.3c11-27.8 38.5-45.5 68.4-43.9 83 4.4 249 26.8 317.1 133z" fill="#FF9999"></path><path d="M445.6 781.7c-9-24.5 25.3-47.7 88.4-48.2s96.6 21.4 96.6 44.5-82 117.8-135.1 137.4C442.4 935 419.3 935 393.9 935s-27.7-45 19.6-62.3c47.4-17.4 41.1-66.5 32.1-91z" fill="#2C4432" ></path><path d="M565.9 222.5c-2.2 0-4.4-0.7-6.2-2.2-6-4.7-12.3-10.3-18.3-15.7-7.1-6.3-13.9-12.3-19-15.9-16.1-11.2-37.7-11.2-53.8 0-9.1 6.4-18.1 13.1-26.9 19.8-4.4 3.4-10.7 2.6-14-1.8-3.4-4.4-2.6-10.7 1.8-14 9-6.9 18.3-13.8 27.6-20.4 23-16.1 53.8-16.1 76.8 0 6 4.3 13.2 10.6 20.8 17.3 5.9 5.2 11.9 10.6 17.5 15 4.3 3.4 5.1 9.7 1.6 14-2 2.6-5 3.9-7.9 3.9z" fill="#212121" ></path><path d="M715.9 256.4c-2.8 0-5.6-1.2-7.5-3.4-11.9-13.6-24.1-26.8-36.5-39.2-16.8-16.8-42.6-21.1-64-10.6-21 10.3-53 27.3-86.3 49.8a9.99 9.99 0 0 1-13.9-2.7 9.99 9.99 0 0 1 2.7-13.9c34.2-23.1 67.1-40.6 88.7-51.2 29.1-14.3 64.1-8.5 87 14.4 12.7 12.7 25.3 26.2 37.5 40.2 3.6 4.2 3.2 10.5-1 14.1-2 1.7-4.4 2.5-6.7 2.5zM593.4 802.3c-4.7 0-9.4-0.1-14.1-0.4-5.5-0.3-9.7-5-9.4-10.5 0.3-5.5 5-9.8 10.5-9.4 59.9 3.3 124.5-16.5 181.9-56 4.6-3.1 10.8-2 13.9 2.6 3.1 4.6 2 10.8-2.6 13.9-56.6 38.8-120.1 59.8-180.2 59.8z" fill="#212121" ></path><path d="M860.4 653.4c-2.1 0-4.2-0.6-5.9-2-4.4-3.3-5.4-9.5-2.1-14 2-2.7 4-5.6 5.7-8.1 27-39.8 39.1-92.5 35.9-156.8-2.3-46-12.8-98.9-30.3-152.8-13-39.8-51.2-65.7-93-63.1-53.1 3.3-130 13.8-194.5 44.8-29.8 14.3-54.5 31.9-73.4 52.1-3.8 4-10.1 4.3-14.1 0.5s-4.3-10.1-0.5-14.1c20.6-22.1 47.3-41.1 79.4-56.5 67.4-32.4 147-43.3 201.9-46.8 50.9-3.2 97.4 28.4 113.2 76.9 18.3 56.4 28.9 109.5 31.3 158 3.4 68.7-9.8 125.6-39.3 169-1.8 2.6-3.9 5.7-6.1 8.7-2.1 2.8-5.1 4.2-8.2 4.2z" fill="#212121"></path><path d="M562.5 299.7c-2.4 0-4.9-0.9-6.8-2.7C503 248.1 435 214.2 387.3 194.4c-14.9-6.2-31-7.4-46.7-3.4-15.7 3.9-29.3 12.6-39.5 25.1-6.3 7.8-13.8 17.2-21.4 27.5-3.3 4.4-9.5 5.4-14 2.1-4.4-3.3-5.4-9.5-2.1-14 7.8-10.7 15.5-20.3 22-28.3 13-15.9 30.3-26.9 50.2-31.9 19.9-5 40.3-3.5 59.2 4.4 49.2 20.4 119.5 55.5 174.4 106.4 4 3.8 4.3 10.1 0.5 14.1-2 2.2-4.7 3.3-7.4 3.3zM382.4 788.6c-111 0-224.5-63.3-288.6-163.3-33.6-52.4-43.9-122.4-30.5-208 0.9-5.5 6-9.2 11.4-8.3 5.5 0.9 9.2 6 8.3 11.4-12.6 80.6-3.4 145.9 27.5 194.1 32.5 50.7 78.5 92.1 133 119.6 52 26.3 109.6 38.1 162.3 33.5 5.5-0.5 10.4 3.6 10.8 9.1 0.5 5.5-3.6 10.4-9.1 10.8-8.2 0.7-16.6 1.1-25.1 1.1z" fill="#212121" ></path><path d="M545.1 725.8c-2.5 0-4.9-0.9-6.9-2.7-4-3.8-4.2-10.1-0.4-14.1 34.6-36.5 46.3-86.8 34.8-149.6-10.1-55.1-38.6-120.2-82.5-188.5-28.5-44.4-78.2-78.2-147.7-100.6-59.1-19.1-120.4-25.8-161.4-28-25.6-1.4-49.1 13.7-58.6 37.6-2 5.1-7.8 7.7-13 5.6-5.1-2-7.7-7.8-5.6-13 12.6-31.9 44-52 78.2-50.2 42.2 2.3 105.4 9.2 166.6 28.9C422.7 275 476 311.6 507 360c45.9 71.4 74.6 137.3 85.3 195.7 12.7 69.5-0.7 125.7-40 167-1.9 2.1-4.6 3.1-7.2 3.1zM83.9 376.8c-0.8 0-1.6-0.1-2.4-0.3-5.4-1.3-8.6-6.8-7.3-12.1 0.7-3 0.8-3.3 1.3-4.5 0.1-0.2 0.5-1.3 2.2-6.9 1.6-5.3 7.2-8.2 12.5-6.6 5.3 1.6 8.2 7.2 6.6 12.5-1.8 5.9-2.5 7.7-2.8 8.5-0.1 0.3-0.2 0.9-0.4 1.7-1.1 4.7-5.2 7.7-9.7 7.7z m10-9z" fill="#212121"></path><path d="M353.9 925c-14.1 0-24.8-9.3-27.3-23.6-3.4-19.1 8.8-45.4 43.5-58.1 17.5-6.4 27.6-18 30.8-35.3 3.4-18.7-2.7-37.6-4.7-42.9-3.7-10.1-2.3-20.7 4.1-29.8 13.5-19.6 48.6-31.5 93.7-31.8 57.9-0.5 83.8 16.6 94.1 26.8 8.2 8.2 12.6 17.7 12.6 27.7 0 21.9-41.9 67.9-50.3 76.8-46.7 50-79.4 65.5-91.3 69.9C404.2 925 379.8 925 353.9 925zM496 723.5h-1.9c-45.5 0.4-70.1 12.7-77.4 23.2-2.7 3.8-3.2 7.5-1.7 11.5 3.1 8.4 9.8 30.4 5.5 53.4-4.4 24.1-19.5 41.6-43.6 50.4-25.5 9.3-32.3 26.5-30.7 35.8 0.8 4.7 3.4 7.1 7.6 7.1 25.1 0 46.7 0 98.1-19 21.9-8.1 53.2-32.3 83.5-64.7 31.7-33.9 45-57.9 45-63.3 0-4.6-2.2-9.1-6.6-13.5-13.2-13.1-42.2-20.9-77.8-20.9z" fill="#212121" ></path><path d="M237 699c-1.8 0-3.5-0.5-5.2-1.4-0.8-0.5-20.8-12.8-41.7-39.8-19.1-24.7-42.8-67.1-47.1-129-4.3-61.6 16.6-120.8 34.9-159.6 19.7-41.8 40.2-69 41.1-70.2 3.3-4.4 9.6-5.3 14-1.9 4.4 3.3 5.3 9.6 1.9 14-0.2 0.3-20.3 27-39.1 67-17.2 36.6-36.8 92.2-32.9 149.2 3.9 56.4 25.2 95 42.4 117.5 18.7 24.4 36.7 35.6 36.9 35.7 4.7 2.9 6.2 9 3.3 13.7-1.9 3.1-5.1 4.8-8.5 4.8z" fill="#FFFFFF"></path></svg></span>
+                    <h2 class="section-title">Cantonese Dim Sum</h2>
+                <div class="menu__container bd-grid">
+
+                    <div class="menu__content">
+                        <img src="assets/img/Guangdong/Barbecuedporkbun.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Barbecued pork bun</h3>
+                        <span class="menu__detail">pork</span>
+                        <span class="menu__preci">$7.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/Guangdong/BBQporkbun.png" alt="" class="menu__img">
+                        <h3 class="menu__name">BBQ pork bun</h3>
+                        <span class="menu__detail">pork</span>
+                        <span class="menu__preci">$7.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/Guangdong/CrystalSteamedCake.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Crystal Steamed Cake</h3>
+                        <span class="menu__detail">cake</span>
+                        <span class="menu__preci">$5.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/Guangdong/JuicyBuns.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Juicy Buns</h3>
+                        <span class="menu__detail">pork</span>
+                        <span class="menu__preci">$7.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/Guangdong/PrawnDumpling.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Prawn Dumpling</h3>
+                        <span class="menu__detail">prawn</span>
+                        <span class="menu__preci">$9.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/Guangdong/Redbeanpastebun.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Red bean paste bun</h3>
+                        <span class="menu__detail">red bean</span>
+                        <span class="menu__preci">$5.99</span>s
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/Guangdong/ShrimpDumpling.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Shrimp Dumpling</h3>
+                        <span class="menu__detail">shrimp</span>
+                        <span class="menu__preci">$9.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/Guangdong/ShrimpTeriyaki.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Shrimp Teriyaki</h3>
+                        <span class="menu__detail">shrimp</span>
+                        <span class="menu__preci">$9.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/Guangdong/shumai.png" alt="" class="menu__img">
+                        <h3 class="menu__name">shumai</h3>
+                        <span class="menu__detail">pork</span>
+                        <span class="menu__preci">$7.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    
+                    <div class="menu__content">
+                        <img src="assets/img/Guangdong/SteamedEggwithMeatballs.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Steamed Egg with Meatballs</h3>
+                        <span class="menu__detail">pork meatballs, egg</span>
+                        <span class="menu__preci">$7.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/Guangdong/StickyRiceChicken.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Sticky Rice Chicken</h3>
+                        <span class="menu__detail">chicken, rice</span>
+                        <span class="menu__preci">$7.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/Guangdong/Steamedpeadumplings.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Steamed pea dumplings</h3>
+                        <span class="menu__detail">pea</span>
+                        <span class="menu__preci">$5.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+                </div>
+
+                    <span class="section-subtitle"><svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"  width="30" height="30"><path d="M771 489.7c0 171.5-89.1 312.7-235.6 310.5-146.4-2.2-235.5-139-235.5-310.5 0-131.4 138.2-243.7 202.9-289 19.6-13.7 45.7-13.7 65.3 0C632.8 246 771 358.3 771 489.7z" fill="#FF9999" ></path><path d="M866.8 540.2c-28 169.2-139.1 293.9-283.2 267.8S374 632.3 402.1 463.1C423 337.2 569.7 250.4 643.4 214.2c25.3-12.4 55.6-7.4 75.5 12.5 58 58 168.8 187.6 147.9 313.5z" fill="#FF5555" ></path><path d="M678 427.9c41.8 166.3-10.1 325-152.7 358.6C382.7 820 263 709.1 221.1 542.8c-29.3-116.7 57.6-246.1 112.2-313 23.6-28.9 63.4-38.9 97.8-24.6 79.7 33.1 217.6 106 246.9 222.7z" fill="#FF5555" ></path><path d="M906.3 655C810 796.9 627.9 858.1 508 774s-87.8-241.8 8.6-383.7c63.9-94 205.3-118.1 293.4-123.7 46.3-2.9 88.7 25.9 103.1 70 27.3 84.1 57.1 224.4-6.8 318.4z" fill="#FF9999"></path><path d="M538.6 385.4C631.3 529.7 674.4 686.7 550 764s-315.1 20.3-407.8-124C74 533.8 122.6 373.6 153.1 296.3c11-27.8 38.5-45.5 68.4-43.9 83 4.4 249 26.8 317.1 133z" fill="#FF9999" ></path><path d="M445.6 781.7c-9-24.5 25.3-47.7 88.4-48.2s96.6 21.4 96.6 44.5-82 117.8-135.1 137.4C442.4 935 419.3 935 393.9 935s-27.7-45 19.6-62.3c47.4-17.4 41.1-66.5 32.1-91z" fill="#2C4432" ></path><path d="M565.9 222.5c-2.2 0-4.4-0.7-6.2-2.2-6-4.7-12.3-10.3-18.3-15.7-7.1-6.3-13.9-12.3-19-15.9-16.1-11.2-37.7-11.2-53.8 0-9.1 6.4-18.1 13.1-26.9 19.8-4.4 3.4-10.7 2.6-14-1.8-3.4-4.4-2.6-10.7 1.8-14 9-6.9 18.3-13.8 27.6-20.4 23-16.1 53.8-16.1 76.8 0 6 4.3 13.2 10.6 20.8 17.3 5.9 5.2 11.9 10.6 17.5 15 4.3 3.4 5.1 9.7 1.6 14-2 2.6-5 3.9-7.9 3.9z" fill="#212121" ></path><path d="M715.9 256.4c-2.8 0-5.6-1.2-7.5-3.4-11.9-13.6-24.1-26.8-36.5-39.2-16.8-16.8-42.6-21.1-64-10.6-21 10.3-53 27.3-86.3 49.8a9.99 9.99 0 0 1-13.9-2.7 9.99 9.99 0 0 1 2.7-13.9c34.2-23.1 67.1-40.6 88.7-51.2 29.1-14.3 64.1-8.5 87 14.4 12.7 12.7 25.3 26.2 37.5 40.2 3.6 4.2 3.2 10.5-1 14.1-2 1.7-4.4 2.5-6.7 2.5zM593.4 802.3c-4.7 0-9.4-0.1-14.1-0.4-5.5-0.3-9.7-5-9.4-10.5 0.3-5.5 5-9.8 10.5-9.4 59.9 3.3 124.5-16.5 181.9-56 4.6-3.1 10.8-2 13.9 2.6 3.1 4.6 2 10.8-2.6 13.9-56.6 38.8-120.1 59.8-180.2 59.8z" fill="#212121" ></path><path d="M860.4 653.4c-2.1 0-4.2-0.6-5.9-2-4.4-3.3-5.4-9.5-2.1-14 2-2.7 4-5.6 5.7-8.1 27-39.8 39.1-92.5 35.9-156.8-2.3-46-12.8-98.9-30.3-152.8-13-39.8-51.2-65.7-93-63.1-53.1 3.3-130 13.8-194.5 44.8-29.8 14.3-54.5 31.9-73.4 52.1-3.8 4-10.1 4.3-14.1 0.5s-4.3-10.1-0.5-14.1c20.6-22.1 47.3-41.1 79.4-56.5 67.4-32.4 147-43.3 201.9-46.8 50.9-3.2 97.4 28.4 113.2 76.9 18.3 56.4 28.9 109.5 31.3 158 3.4 68.7-9.8 125.6-39.3 169-1.8 2.6-3.9 5.7-6.1 8.7-2.1 2.8-5.1 4.2-8.2 4.2z" fill="#212121" ></path><path d="M562.5 299.7c-2.4 0-4.9-0.9-6.8-2.7C503 248.1 435 214.2 387.3 194.4c-14.9-6.2-31-7.4-46.7-3.4-15.7 3.9-29.3 12.6-39.5 25.1-6.3 7.8-13.8 17.2-21.4 27.5-3.3 4.4-9.5 5.4-14 2.1-4.4-3.3-5.4-9.5-2.1-14 7.8-10.7 15.5-20.3 22-28.3 13-15.9 30.3-26.9 50.2-31.9 19.9-5 40.3-3.5 59.2 4.4 49.2 20.4 119.5 55.5 174.4 106.4 4 3.8 4.3 10.1 0.5 14.1-2 2.2-4.7 3.3-7.4 3.3zM382.4 788.6c-111 0-224.5-63.3-288.6-163.3-33.6-52.4-43.9-122.4-30.5-208 0.9-5.5 6-9.2 11.4-8.3 5.5 0.9 9.2 6 8.3 11.4-12.6 80.6-3.4 145.9 27.5 194.1 32.5 50.7 78.5 92.1 133 119.6 52 26.3 109.6 38.1 162.3 33.5 5.5-0.5 10.4 3.6 10.8 9.1 0.5 5.5-3.6 10.4-9.1 10.8-8.2 0.7-16.6 1.1-25.1 1.1z" fill="#212121" ></path><path d="M545.1 725.8c-2.5 0-4.9-0.9-6.9-2.7-4-3.8-4.2-10.1-0.4-14.1 34.6-36.5 46.3-86.8 34.8-149.6-10.1-55.1-38.6-120.2-82.5-188.5-28.5-44.4-78.2-78.2-147.7-100.6-59.1-19.1-120.4-25.8-161.4-28-25.6-1.4-49.1 13.7-58.6 37.6-2 5.1-7.8 7.7-13 5.6-5.1-2-7.7-7.8-5.6-13 12.6-31.9 44-52 78.2-50.2 42.2 2.3 105.4 9.2 166.6 28.9C422.7 275 476 311.6 507 360c45.9 71.4 74.6 137.3 85.3 195.7 12.7 69.5-0.7 125.7-40 167-1.9 2.1-4.6 3.1-7.2 3.1zM83.9 376.8c-0.8 0-1.6-0.1-2.4-0.3-5.4-1.3-8.6-6.8-7.3-12.1 0.7-3 0.8-3.3 1.3-4.5 0.1-0.2 0.5-1.3 2.2-6.9 1.6-5.3 7.2-8.2 12.5-6.6 5.3 1.6 8.2 7.2 6.6 12.5-1.8 5.9-2.5 7.7-2.8 8.5-0.1 0.3-0.2 0.9-0.4 1.7-1.1 4.7-5.2 7.7-9.7 7.7z m10-9z" fill="#212121" ></path><path d="M353.9 925c-14.1 0-24.8-9.3-27.3-23.6-3.4-19.1 8.8-45.4 43.5-58.1 17.5-6.4 27.6-18 30.8-35.3 3.4-18.7-2.7-37.6-4.7-42.9-3.7-10.1-2.3-20.7 4.1-29.8 13.5-19.6 48.6-31.5 93.7-31.8 57.9-0.5 83.8 16.6 94.1 26.8 8.2 8.2 12.6 17.7 12.6 27.7 0 21.9-41.9 67.9-50.3 76.8-46.7 50-79.4 65.5-91.3 69.9C404.2 925 379.8 925 353.9 925zM496 723.5h-1.9c-45.5 0.4-70.1 12.7-77.4 23.2-2.7 3.8-3.2 7.5-1.7 11.5 3.1 8.4 9.8 30.4 5.5 53.4-4.4 24.1-19.5 41.6-43.6 50.4-25.5 9.3-32.3 26.5-30.7 35.8 0.8 4.7 3.4 7.1 7.6 7.1 25.1 0 46.7 0 98.1-19 21.9-8.1 53.2-32.3 83.5-64.7 31.7-33.9 45-57.9 45-63.3 0-4.6-2.2-9.1-6.6-13.5-13.2-13.1-42.2-20.9-77.8-20.9z" fill="#212121" ></path><path d="M237 699c-1.8 0-3.5-0.5-5.2-1.4-0.8-0.5-20.8-12.8-41.7-39.8-19.1-24.7-42.8-67.1-47.1-129-4.3-61.6 16.6-120.8 34.9-159.6 19.7-41.8 40.2-69 41.1-70.2 3.3-4.4 9.6-5.3 14-1.9 4.4 3.3 5.3 9.6 1.9 14-0.2 0.3-20.3 27-39.1 67-17.2 36.6-36.8 92.2-32.9 149.2 3.9 56.4 25.2 95 42.4 117.5 18.7 24.4 36.7 35.6 36.9 35.7 4.7 2.9 6.2 9 3.3 13.7-1.9 3.1-5.1 4.8-8.5 4.8z" fill="#FFFFFF"></path></svg></span>
+                    <h2 class="section-title">Staple Food</h2>
+                <div class="menu__container bd-grid">
+
+                    <div class="menu__content">
+                        <img src="assets/img/zhushi/ChickenFilletNoodle.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Chicken Fillet Noodle</h3>
+                        <span class="menu__detail">chicken</span>
+                        <span class="menu__preci">$12.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/zhushi/FriedRicewithDicedMeat.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Fried Rice with Diced Meat</h3>
+                        <span class="menu__detail">meat, rice</span>
+                        <span class="menu__preci">$12.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/zhushi/Sausagericenoodles.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Sausage rice noodles</h3>
+                        <span class="menu__detail">rice noodles, egg</span>
+                        <span class="menu__preci">$6.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+                    <div class="menu__content">
+                        <img src="assets/img/zhushi/ShrimpWontons.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Shrimp Wontons</h3>
+                        <span class="menu__detail">shrimp</span>
+                        <span class="menu__preci">$10.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/zhushi/Wontonnoodlestew.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Wonton noodle stew</h3>
+                        <span class="menu__detail">pork</span>
+                        <span class="menu__preci">$12.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/zhushi/YangchunNoodles.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Yangchun Noodles</h3>
+                        <span class="menu__detail">moodles</span>
+                        <span class="menu__preci">$8.99</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+
+                </div>
+            </section>
+
+        </main>
+        <!--========== FOOTER ==========-->
+        <footer class="footer section bd-container">
+            <div class="footer__container bd-grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">Paeonia</a>
+                    <span class="footer__description">Restaurant</span>
+                    <div>
+                        <a href="https://www.facebook.com/stev.yin.5" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://instagram.com/stevyin?r=nametag" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://twitter.com/StevYin8" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Services</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Delivery</a></li>
+                        <li><a href="#" class="footer__link">Pricing</a></li>
+                        <li><a href="#" class="footer__link">Fast food</a></li>
+                        <li><a href="#" class="footer__link">Reserve your spot</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Information</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Event</a></li>
+                        <li><a href="#" class="footer__link">Food Ranking</a></li>
+                        <li><a href="#" class="footer__link">Privacy policy</a></li>
+                        <li><a href="#" class="footer__link">Terms of services</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Adress</h3>
+                    <ul>
+                        <li>Shaojun  -  Yin</li>
+                        <li>171 Washington St.</li>
+                        <li>(617)949 - 1588</li>
+                        <li>stevyin@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; 2021 Paeonia. All right reserved</p>
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
